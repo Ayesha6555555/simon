@@ -1,3 +1,3 @@
 # simon
 this is our first game.
-this is our first websitr
+this is our first website

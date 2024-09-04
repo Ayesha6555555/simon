@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.search-box input[type="text"] {
+    width: 100%;
+    padding: 10px 60px 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.search-box input[type="text"]:focus {
+    outline: none;
+}
+
+.search-box .clear-btn,
+.search-box .search-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.search-box .clear-btn {
+    right: 50px;
+    color: #ff0000;
+    display: none;
+}
+
+.search-box .search-btn {
+    right: 15px;
+    color: #333;
+}
+
+.results-header {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold; 
+    text-align: justify;
+    margin-top: 20px; 
+    font-size: 1.2em; 
+    color: #333; /
+}
+
+.book-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.book-item {
+    margin: 15px;
+    text-align: center;
+    width: 200px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.book-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the book cover on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+}
+.book-item img {
+    width: 180px;
+    height: 280px;
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto;
+}
+
+.book-title, .author-name, .book-genre {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.book-title {
+    font-weight: bold;
+}
+
+.author-name, .book-genre {
+    font-style: italic;
+    color: #666;
+}
